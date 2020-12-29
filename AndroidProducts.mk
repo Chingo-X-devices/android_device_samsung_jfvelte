@@ -13,8 +13,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_jfvelte.mk
+    $(LOCAL_DIR)/aim_jfvelte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_jfvelte-eng \
-    lineage_jfvelte-userdebug
+    aim_jfvelte-eng \
+    aim_jfvelte-userdebug

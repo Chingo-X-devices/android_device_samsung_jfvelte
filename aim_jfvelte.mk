@@ -13,16 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Custom bootanimation
+TARGET_SCREEN_RES := 1080
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from jfvelte device
 $(call inherit-product, device/samsung/jfvelte/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AIMROM stuff.
+$(call inherit-product, vendor/aim/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_jfvelte
+PRODUCT_NAME := aim_jfvelte
 PRODUCT_DEVICE := jfvelte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
